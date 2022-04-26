@@ -1,0 +1,420 @@
+.mapcontainer {
+  width: 100vw;
+}
+.slider {
+  width: 100%;
+  text-align: center;
+}
+
+.each-slide {
+  width: 100%;
+}
+
+/* TODO: sätt vh? Tidigare var det height: 200px; width: 200px; (viktiga är att det ska bli 1:1 eller 16:9 beroende på vilket format vi väljer för croppade uppladdade bilder) */
+.imagewrapper {
+  padding-top: 1.2rem;
+}
+.images1 {
+  height: 20vh;
+  width: 20vw;
+  object-fit: cover;
+}
+.singleimagewrapper {
+  display: flex;
+  justify-content: center;
+}
+.imagesingle {
+  height: 25vh;
+  width: 50vw;
+  object-fit: cover;
+}
+.buttonrow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0.2rem;
+  padding: 0 0.2rem;
+}
+.buttonwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonwrapper span {
+  font-size: 0.6rem;
+}
+.commentbtn {
+  font-size: 2.5rem;
+}
+.greyedout {
+  color: rgb(163, 160, 160);
+}
+.popup {
+  padding: 0;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  padding: 0.3rem 0;
+  background-color: rgba(81, 231, 126, 0.322);
+}
+.heart {
+  color: rgb(196, 23, 23);
+}
+.aboutheader {
+  text-align: center;
+  margin-bottom: -1rem;
+}
+.quote {
+  font-size: 1rem;
+}
+.quotefrom {
+  font-size: 0.9rem;
+  color: rgb(37, 78, 68);
+}
+/* Styling för AddNewPlace */
+.addNewPlaceContainer {
+  width: 80vw;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+  position: relative;
+  border-radius: 1rem;
+  background-color: rgba(250, 241, 191, 0.712);
+  box-shadow: 0px -6px 10px 4px rgba(0, 0, 0, 0.445);
+  transition: all 500ms ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.input {
+  margin: 3%;
+  width: 95%;
+}
+
+.formbuttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ------------Styling for Images on Locations----------------- */
+
+.AddImage {
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 7%;
+}
+
+.AddImage_Image {
+  max-width: 100%;
+}
+.wholecontainer {
+  width: 80vw;
+  height: 65vh;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+  position: relative;
+  border-radius: 1rem;
+  background-color: rgba(245, 245, 245, 0.725);
+  box-shadow: 0px -6px 10px 4px rgba(0, 0, 0, 0.445);
+  transition: all 500ms ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.addAnotherImage {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  width: 100%;
+  height: 45vh;
+  z-index: 1000000000;
+}
+/* ------------Styling for Images on Remove Images----------------- */
+
+.removeImageContainer {
+  width: 85vw;
+  padding: 1rem;
+  /* backdrop-filter: blur(5px); */
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 5%;
+  border-radius: 1rem;
+  background-color: rgba(245, 245, 245, 0.712);
+  box-shadow: 0px -6px 10px 4px rgba(0, 0, 0, 0.445);
+  transition: all 500ms ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.confirmButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.25rem 0.12rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.25rem 0.12rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+/* ------------Styling for main window and spin animation----------------- */
+.mainwrapper,
+.commentswrapper {
+  height: 55vh;
+  width: 100%;
+  /* transform: translateZ(50px); */
+}
+.commentswrapper {
+  position: relative;
+
+  transform: rotateY(-180deg);
+}
+.spin {
+  transform: rotateY(180deg);
+
+  transition: all 500ms ease-in-out;
+}
+.buttonRowSpin {
+  transform: rotateY(180deg);
+  /* transition: all 500ms ease-in-out; */
+}
+
+/* ------------Styling for comment section----------------- */
+.title {
+  display: block;
+  text-align: center;
+  font-family: 'Lily Script One';
+  color: rgb(107, 106, 106);
+  font-size: 24px;
+  margin-top: -10px;
+  margin-bottom: -0px;
+}
+
+.scrollwrapper {
+  position: relative;
+  height: 43.8vh;
+  width: 106%;
+  margin-left: -3%;
+}
+.scrollwrapper:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+
+  z-index: 10;
+  top: -0vh;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to top,
+    rgba(243, 235, 235, 0.04),
+    rgba(245, 245, 245, 0.812) 90%
+  );
+}
+.scrollwrapper:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+
+  z-index: 10;
+  bottom: 0vh;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(243, 235, 235, 0.04),
+    rgba(245, 245, 245, 0.812) 90%
+  );
+}
+
+/*--Individual comment--*/
+.deletelink {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  padding: 0 3px;
+  color: rgb(59, 53, 46);
+  background-color: rgba(216, 210, 210, 0.316);
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.deletediv {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(209, 212, 209);
+  border-radius: 0.4rem;
+  padding-right: 0.5rem;
+}
+.deletediv button {
+  width: 4rem;
+  margin: 0.2rem;
+}
+.show {
+  display: flex;
+}
+
+.individualcomment {
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(
+    -87.630715078143deg,
+    rgba(87, 207, 127, 0.5) 34.86034675184729%,
+    rgba(87, 207, 127, 0.5) 35.95171948763341%,
+    rgba(53, 204, 179, 0.5) 82.48388431342364%
+  );
+  border-radius: 0.4rem;
+
+  width: 95%;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.397);
+}
+.individualcomment:nth-child(odd) {
+  background-image: linear-gradient(
+    87.630715078143deg,
+    rgba(87, 207, 127, 0.5) 34.86034675184729%,
+    rgba(87, 207, 127, 0.5) 35.95171948763341%,
+    rgba(53, 204, 179, 0.5) 82.48388431342364%
+  );
+}
+.commentimage {
+  position: relative;
+  flex-shrink: 0;
+  height: 60px;
+  width: 60px;
+}
+.commentimage img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+.commenttext {
+  padding-left: 5px;
+}
+.time {
+  display: inline-block;
+  width: 100%;
+}
+.commenthead {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: rgb(37, 78, 68);
+}
+.commentbody {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/*----Add new comment ---*/
+.addcomment {
+  position: absolute;
+  bottom: 0.2rem;
+  right: -3%;
+  width: 106%;
+  height: 2.5rem;
+}
+
+.addnewcommenttext {
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  font-size: 14px;
+}
+.inputwrapper {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.commentinput {
+  width: 83.2%;
+  font-size: 16px;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(167, 164, 164);
+}
+.commenbtn {
+  height: 23px;
+  width: 16.7%;
+  background: rgb(214, 207, 207);
+  border-radius: 0.5rem;
+  border: none;
+}
+.loggedoutmessage {
+  position: absolute;
+  bottom: 2.3vh;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 380px) {
+  .wholecontainer {
+    width: 83vw;
+    height: 75vh;
+    margin-left: -5vw;
+  }
+  .imagewrapper {
+    padding-top: 0.6rem;
+  }
+  .images1 {
+    height: 25vh;
+    width: 55vw;
+    object-fit: cover;
+  }
+  .imagesingle {
+    height: 25vh;
+    width: 55vw;
+    object-fit: cover;
+  }
+  .buttonrow {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-top: 4vh;
+    padding: 0 0.2rem;
+  }
+}
+
+.commentscroll {
+  height: 100%;
+  width: 103%;
+  /* margin-left: -3%; */
+  padding-top: 10px;
+  overflow: scroll !important;
+
+  /* transform: translateZ(100px) perspective(500px); */
+  /* perspective: 1000; */
+  /* transform-style: preserve-3d; */
+}
+
+@media screen and (min-width: 520px) {
+  .wholecontainer {
+    width: 25rem;
+    height: 38.5rem;
+  }
+}

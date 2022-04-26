@@ -1,0 +1,52 @@
+{
+  "name": "hundplats",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "node index.js",
+    "deploy": "now -e NODE_ENV=production",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
+    "aws4": "^1.11.0",
+    "dotenv": "^10.0.0",
+    "google": "^0.6.0",
+    "google-maps-react": "^2.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "leaflet-geosearch": "^3.3.2",
+    "maps": "^0.3.3",
+    "mongodb-client-encryption": "^1.2.6",
+    "mongoose": "^5.12.10",
+    "next": "10.2.2",
+    "react": "^17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-image-crop": "^8.6.9",
+    "react-leaflet": "^3.2.0",
+    "react-redux": "^7.2.4",
+    "react-slideshow-image": "^3.4.6",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-react": "^2.0.3",
+    "validator": "^13.6.0"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harlenback/hundplats.git"
+  },
+  "author": "Erik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harlenback/hundplats/issues"
+  },
+  "homepage": "https://github.com/harlenback/hundplats#readme",
+  "browser": {
+    "fs": false
+  }
+}

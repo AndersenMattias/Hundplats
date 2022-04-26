@@ -1,0 +1,51 @@
+.menu {
+  position: fixed;
+
+  align-items: space-between;
+  flex-direction: row;
+  left: 0;
+  bottom: 0;
+  height: 2em;
+  width: 100vw;
+  transition: all 200ms ease;
+  box-shadow: 0px -3px 5px 0px rgba(128, 128, 128, 0.705);
+  background-color: rgb(87, 207, 127);
+  background-image: linear-gradient(
+    -87.630715078143deg,
+    rgba(87, 207, 127, 1) 34.86034675184729%,
+    rgba(87, 207, 127, 1) 35.95171948763341%,
+    rgba(53, 204, 179, 1) 82.48388431342364%
+  );
+  cursor: pointer;
+}
+
+.active {
+  height: 30vh;
+  transition: all 200ms ease;
+}
+.menutextwrapper {
+  display: flex;
+  align-items: center;
+}
+.settingsicon {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-top: 5px;
+
+  padding: 0 0.5em;
+}
+.settingstext {
+  display: inline-block;
+}
+.settingswrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singlesetting {
+  width: 95vw;
+  padding: 3vw;
+  margin-top: 2vh;
+  background-color: rgba(255, 255, 255, 0.267);
+  box-shadow: 0px 5px 15px 0px rgba(54, 54, 54, 0.304);
+}
